@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <title>HangMan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        input {
+            font-size: 40px;text-align: center;
+            border-radius: 15px;
+        }
+        .blur {
+    filter: blur(5px);}
+    </style>
+</head>
+
+<body onload="get()"
+    style="text-align: center;background-repeat: no-repeat;background-size: cover;background-attachment: fixed;"
+    background="mj3.jpg">
+    <hl style="font-size: 50px;color: rgb(248, 3, 3);font-family: Bernard MT Condensed"><b>Hang-Man Game</b></hl>
+        <div
+            style="width:30%;text-align: center;margin-left: auto;margin-right: auto;">
+            <b><span id="demo2" style="font-size: 50px;color: red;"> </span></b>
+            <span id="demo" style="font-size: 50px;"></span>
+        </div>
+        <p style="font-size: 40px;" id="text"></p>
+        <input type="text" id="value" style="padding-top: 10px;" disabled><br /><br />
+        <input type="text" id="ans" onkeyup="search(event)" placeholder="Enter Here"><br/><br /><br />
+        <a class="fa fa-refresh" style="font-size:40px;color:rgb(61, 7, 238);text-decoration: none;margin-right: 110px;" target="_self" href="hangerman.html"></a>
+        <a class="fa fa-arrow-left" style="font-size:40px;color:rgb(61, 7, 238);text-decoration: none;" target="_self" href="hangermanmain.html"></a>
+        <br/><br/><lable style="margin-right: 110px">Reload</lable><lable>Back</lable>
+    <script src="hangerman.js"></script>
+</body>
+
+</html>
