@@ -9,8 +9,10 @@
             font-size: 40px;text-align: center;
             border-radius: 15px;
         }
-        .blur {
-    filter: blur(5px);}
+        button{
+            font-size: 20px;border-radius: 20px;color:hsl(206, 78%, 2%);background-color: rgb(253, 252, 252)
+        }
+        button:hover{color:aliceblue;background-color: blue;}
     </style>
 </head>
 
@@ -25,7 +27,7 @@
         </div>
         <p style="font-size: 40px;" id="text"></p>
         <input type="text" id="value" style="padding-top: 10px;" disabled><br /><br />
-        <input type="text" id="ans" onkeyup="search(event)" placeholder="Enter Here"><br/><br /><br />
+        <input type="text" id="ans" onkeyup="search(event)" placeholder="Enter Here" ><br/><br/><span id="button1" style="font-size: 30px;background-color: blue;color: aliceblue;"></span><button id="button" onclick="hint1()">Hint</button><br/>
         <a class="fa fa-refresh" style="font-size:40px;color:rgb(61, 7, 238);text-decoration: none;margin-right: 110px;" target="_self" href="hangerman.html"></a>
         <a class="fa fa-arrow-left" style="font-size:40px;color:rgb(61, 7, 238);text-decoration: none;" target="_self" href="hangermanmain.html"></a>
         <br/><br/><lable style="margin-right: 110px">Reload</lable><lable>Back</lable>
