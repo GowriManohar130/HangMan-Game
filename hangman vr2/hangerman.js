@@ -86,6 +86,7 @@ let ne = "";
 let text = document.getElementById("text")
 buttons.forEach(function (button) {
     button.addEventListener('click', function () {
+        bttt.disabled = false;
         btt = button.value;
         localStorage.setItem('selectedCategory', btt);
     });
@@ -111,9 +112,8 @@ function get() {
 function search(event) {
     const charCode = event.which || event.keyCode;
     const isAlphabeticKey = (charCode >= 65 && charCode <= 90) || (charCode >= 97 && charCode <= 122);
-
     if (!isAlphabeticKey) {
-        return;
+        event.preventDefault();
     }
     let a = document.getElementById("ans").value
     let del = document.getElementById("ans");
